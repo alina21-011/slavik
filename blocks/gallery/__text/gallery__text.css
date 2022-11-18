@@ -1,0 +1,11 @@
+.gallery__text {
+  color: black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 29px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 21px;
+}

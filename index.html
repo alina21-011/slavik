@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pages/index.css">
+  <title>Mesto</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <img class="header__logo" src="images/Vector.svg" alt="логотип">
+  </header>
+  <main class="content">
+    <section class="profile">
+      <div class="profile__main">
+        <img class="profile__avatar" src="./images/2022-11-18 13.36.37.jpg" alt="Главное фото профиля">
+        <div class="profile__info">
+          <h1 class="profile__name">Славик</h1>
+          <p class="profile__description">Самый прикольный на свете</p>
+          <button type="button" class="profile__edit-button"></button>
+        </div>
+      </div>
+      <button class="profile__add-button" type="button"></button>
+    </section>
+    <section class="gallery">
+      <div class="gallery__photos">
+        <article class="gallery__item">
+          <img src="images/2022-11-18 13.37.09.jpg" class="gallery__photo" alt="Старинный храм в горах">
+          <div class="gallery__info">
+            <p class="gallery__text">Славик красивый</p>
+            <button class="gallery__like"></button>
+          </div>
+        </article>
+        <article class="gallery__item">
+          <img src="images/2022-11-18 13.37.24.jpg" class="gallery__photo" alt="Эльбрус на закате">
+          <div class="gallery__info">
+            <p class="gallery__text">Славик защитник</p>
+            <button class="gallery__like"></button>
+          </div>
+        </article>
+        <article class="gallery__item">
+          <img src="images/2022-11-18 13.37.39.jpg" class="gallery__photo" alt="Горы и осенний лес">
+          <div class="gallery__info">
+            <p class="gallery__text">Славик любит зелень</p>
+            <button class="gallery__like"></button>
+          </div>
+        </article>
+        <article class="gallery__item">
+          <img src="images/2022-11-18 13.37.56.jpg" class="gallery__photo" alt="Старинный храм в горах">
+          <div class="gallery__info">
+            <p class="gallery__text">Славик проснулся </p>
+            <button class="gallery__like"></button>
+          </div>
+        </article>
+        <article class="gallery__item">
+          <img src="images/2022-11-18 13.38.21.jpg" class="gallery__photo" alt="Эльбрус на закате">
+          <div class="gallery__info">
+            <p class="gallery__text">Славик на работе</p>
+            <button class="gallery__like"></button>
+          </div>
+        </article>
+        <article class="gallery__item">
+          <img src="images/2022-11-18 13.45.05.jpg" class="gallery__photo" alt="Горы и осенний лес">
+          <div class="gallery__info">
+            <p class="gallery__text">Славик купил шапку</p>
+            <button class="gallery__like"></button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">© 2022 Mesto Russia</p>
+  </footer>
+  <div class="popup">
+    <div class="popup__container">
+      <form class="popup__form" method="post" name="form">
+        <button class="popup__close" type="reset" title="Закрыть"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <input type="text" class="popup__input-name" name="name" value="Жак-Ив Кусто">
+        <input type="text" class="popup__input-info" name="info" value="Исследователь океана">
+        <button type="submit" class="popup__input-save">
+          <span class="popup__save">Сохранить</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>
